@@ -1,0 +1,5 @@
+<div class="tache">
+    <p class="responsable">{{tache.responsable}}</p>
+    <p><mat-icon class="flag" [ngClass]="{'green': tache.status=='Faible', 'red': tache.status=='Elevé', 'yellow': tache.status=='Moyen'}">flag</mat-icon>{{tache.tache}}</p>
+    <p class="date">{{tache.date_evaluation}}</p>
+</div>

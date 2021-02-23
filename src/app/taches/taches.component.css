@@ -1,0 +1,22 @@
+#container{
+    background-color: #fff;
+}
+#taches-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    border-bottom: 1px solid gray;
+    padding: 15px 10px ;
+}
+.taches-title{
+    display: flex;
+    flex-flow: row;
+}
+.taches-title i{
+    margin: 0 10px;
+}
+#taches-container{
+    height: 400px;
+    overflow: scroll;
+}

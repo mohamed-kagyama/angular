@@ -1,0 +1,21 @@
+#donut{
+    background-color: darkmagenta;
+}
+.icon{
+    border-radius: 50%;
+    color: #fff;
+    background-color: #28a9e0;
+    height: 2rem;
+    width: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+highcharts-chart{
+    width: 80%;
+}

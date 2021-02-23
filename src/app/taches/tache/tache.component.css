@@ -1,0 +1,13 @@
+.tache{
+    border-bottom: 1px solid grey;
+    padding: 5% 10%;
+}
+.flag.red{
+    color: rgb(231, 37, 37);
+}
+.flag.green{
+    color: rgb(50, 206, 11);
+}
+.flag.yellow{
+    color: rgb(217, 221, 2);
+}

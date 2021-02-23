@@ -1,0 +1,38 @@
+<div id="container">
+  <div id="taches-header">
+    <div class="taches-title">
+      <i class="fas fa-tasks"></i>
+      <p>Tâches concernes mon departement</p>
+    </div>
+    <div id="menu">
+      <button
+        mat-icon-button
+        [matMenuTriggerFor]="menu"
+        aria-label="Example icon-button with a menu"
+      >
+        <mat-icon>more_vert</mat-icon>
+      </button>
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item>
+          <span>Statut</span>
+        </button>
+        <button mat-menu-item disabled>
+          <span>Périodicité de l'évaluation</span>
+        </button>
+        <button mat-menu-item>
+            <span>Priorité de l'action</span>
+        </button>
+        <button mat-menu-item>
+            <span>Categorie</span>
+        </button>
+      </mat-menu>
+    </div>
+  </div>
+  <div id="taches-container">
+    <div *ngFor="let tache of taches" id="taches">
+      <app-tache
+      [tache]="tache"
+        ></app-tache>
+    </div>
+  </div>
+</div>

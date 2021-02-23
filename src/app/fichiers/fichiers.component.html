@@ -1,0 +1,30 @@
+<div id="fichiers-container">
+    <div class="fichiers-header">
+        <div class="title">
+            <mat-icon>cloud_upload</mat-icon>
+            <p>Derniers Uploads</p>
+        </div>
+        <div id="menu">
+            <button
+              mat-icon-button
+              [matMenuTriggerFor]="menu"
+              aria-label="Example icon-button with a menu"
+            >
+              <mat-icon>more_vert</mat-icon>
+            </button>
+            <mat-menu #menu="matMenu">
+              <button mat-menu-item>
+                <span>Last Week</span>
+              </button>
+              <button mat-menu-item disabled>
+                <span>Last Month</span>
+              </button>
+            </mat-menu>
+          </div>
+    </div>
+    <div class="fichiers-content">
+        <div>
+            <app-fichier></app-fichier>
+        </div>
+    </div>
+</div>
